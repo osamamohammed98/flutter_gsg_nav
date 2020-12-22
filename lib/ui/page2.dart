@@ -1,4 +1,6 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:gsg_flutter_2/router/router.gr.dart';
 import 'package:gsg_flutter_2/ui/page3.dart';
 
 class Page2 extends StatelessWidget {
@@ -18,8 +20,8 @@ class Page2 extends StatelessWidget {
         child: RaisedButton(
             child: Text('Go to screen 3'),
             onPressed: () async {
-              Navigator.of(context).pushNamed('screen3',
-                  arguments: {'name': 'wesam', 'age': 25, 'address': 'gaza'});
+              ExtendedNavigator.root
+                  .pushPage3Route(name: 'omar', address: 'gaza', age: 12);
             }),
       ),
     );

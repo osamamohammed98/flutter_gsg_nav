@@ -5,7 +5,7 @@ class Page3 extends StatelessWidget {
   String name;
   int age;
   String address;
-  Page3({this.name, this.address, this.age});
+  Page3(this.name, this.address, this.age);
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -15,11 +15,8 @@ class Page3 extends StatelessWidget {
             'My name is $name, I am $age years old and i live in $address'),
       ),
       body: Center(
-        child: RaisedButton(
-            child: Text('return to screen 2'),
-            onPressed: () {
-              Navigator.of(context).pop({'name': 'ahmed', 'age': 8});
-            }),
+        child:
+            RaisedButton(child: Text('return to screen 2'), onPressed: () {}),
       ),
     );
   }

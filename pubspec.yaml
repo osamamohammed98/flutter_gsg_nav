@@ -23,6 +23,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  auto_route: ^0.6.9
+  logger: ^0.9.4
+  string_validator: ^0.1.4
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -32,6 +35,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  auto_route_generator: ^0.6.10
+  build_runner:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
